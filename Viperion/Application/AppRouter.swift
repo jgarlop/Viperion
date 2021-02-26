@@ -18,6 +18,8 @@ protocol AppRouter {
     func push(_ vc: UIViewController)
     func pop()
     func navigateTo(route: AppRoute)
+    func showNavBar()
+    func hideNavBar()
 }
 
 class AppRouterImpl: AppRouter {
@@ -52,6 +54,14 @@ class AppRouterImpl: AppRouter {
 
     func navigateTo(route: AppRoute) {
         // To implement
+    }
+
+    func showNavBar() {
+        navController?.navigationBar.isHidden = false
+    }
+
+    func hideNavBar() {
+        navController?.navigationBar.isHidden = true
     }
 }
 
