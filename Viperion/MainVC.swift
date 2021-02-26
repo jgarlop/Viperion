@@ -17,6 +17,7 @@ final class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.white
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
