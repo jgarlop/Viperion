@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D040C3B25E920A200B01B8B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C3A25E920A200B01B8B /* AppRouter.swift */; };
+		9D040C3F25E9263400B01B8B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C3E25E9263400B01B8B /* ServiceLocator.swift */; };
+		9D040C4225E926FB00B01B8B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4125E926FB00B01B8B /* UIApplication.swift */; };
 		9DFA1B3925E010700026C3C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3825E010700026C3C2 /* AppDelegate.swift */; };
 		9DFA1B3B25E010700026C3C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */; };
 		9DFA1B3D25E010700026C3C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3C25E010700026C3C2 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D040C3A25E920A200B01B8B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		9D040C3E25E9263400B01B8B /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		9D040C4125E926FB00B01B8B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		9DFA1B3525E010700026C3C2 /* Viperion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viperion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFA1B3825E010700026C3C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D040C3925E9209500B01B8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9D040C3A25E920A200B01B8B /* AppRouter.swift */,
+				9D040C3E25E9263400B01B8B /* ServiceLocator.swift */,
+				9D040C4125E926FB00B01B8B /* UIApplication.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		9DFA1B2C25E010700026C3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +74,7 @@
 		9DFA1B3725E010700026C3C2 /* Viperion */ = {
 			isa = PBXGroup;
 			children = (
+				9D040C3925E9209500B01B8B /* Application */,
 				9DFA1B3825E010700026C3C2 /* AppDelegate.swift */,
 				9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */,
 				9DFA1B3C25E010700026C3C2 /* ViewController.swift */,
@@ -140,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D040C3F25E9263400B01B8B /* ServiceLocator.swift in Sources */,
+				9D040C4225E926FB00B01B8B /* UIApplication.swift in Sources */,
 				9DFA1B3D25E010700026C3C2 /* ViewController.swift in Sources */,
 				9DFA1B5125E011760026C3C2 /* MainVC.swift in Sources */,
 				9DFA1B3925E010700026C3C2 /* AppDelegate.swift in Sources */,
+				9D040C3B25E920A200B01B8B /* AppRouter.swift in Sources */,
 				9DFA1B3B25E010700026C3C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

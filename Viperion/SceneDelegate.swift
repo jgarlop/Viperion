@@ -12,6 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         configureWindow(scene)
+        navigateToFirstModule()
     }
 }
 
@@ -21,8 +22,12 @@ extension SceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = MainVC()
         self.window = window
+        window.rootViewController = UINavigationController()
+        UIApplication.serviceLocator.appRouter.window = window
+    }
+
+    private func navigateToFirstModule() {
+        UIApplication.serviceLocator.appRouter.set(MainVC())
     }
 }
-
