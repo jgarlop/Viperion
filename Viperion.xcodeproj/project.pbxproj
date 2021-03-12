@@ -10,12 +10,14 @@
 		9D040C3B25E920A200B01B8B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C3A25E920A200B01B8B /* AppRouter.swift */; };
 		9D040C3F25E9263400B01B8B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C3E25E9263400B01B8B /* ServiceLocator.swift */; };
 		9D040C4225E926FB00B01B8B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4125E926FB00B01B8B /* UIApplication.swift */; };
+		9D040C4A25E9320800B01B8B /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4925E9320800B01B8B /* DemoRouter.swift */; };
+		9D040C4F25E9370A00B01B8B /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4E25E9370A00B01B8B /* Demo.swift */; };
+		9D040C5225E9371500B01B8B /* DemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C5125E9371500B01B8B /* DemoPresenter.swift */; };
 		9DFA1B3925E010700026C3C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3825E010700026C3C2 /* AppDelegate.swift */; };
 		9DFA1B3B25E010700026C3C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */; };
-		9DFA1B3D25E010700026C3C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3C25E010700026C3C2 /* ViewController.swift */; };
 		9DFA1B4225E010710026C3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA1B4125E010710026C3C2 /* Assets.xcassets */; };
 		9DFA1B4525E010710026C3C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA1B4325E010710026C3C2 /* LaunchScreen.storyboard */; };
-		9DFA1B5125E011760026C3C2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B5025E011760026C3C2 /* MainVC.swift */; };
+		9DFA1B5125E011760026C3C2 /* DemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B5025E011760026C3C2 /* DemoVC.swift */; };
 		9DFA1B5725E019160026C3C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA1B5925E019160026C3C2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -23,14 +25,16 @@
 		9D040C3A25E920A200B01B8B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		9D040C3E25E9263400B01B8B /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		9D040C4125E926FB00B01B8B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		9D040C4925E9320800B01B8B /* DemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoRouter.swift; sourceTree = "<group>"; };
+		9D040C4E25E9370A00B01B8B /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		9D040C5125E9371500B01B8B /* DemoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPresenter.swift; sourceTree = "<group>"; };
 		9DFA1B3525E010700026C3C2 /* Viperion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viperion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFA1B3825E010700026C3C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DFA1B3C25E010700026C3C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DFA1B4125E010710026C3C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DFA1B4425E010710026C3C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DFA1B4625E010710026C3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DFA1B5025E011760026C3C2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9DFA1B5025E011760026C3C2 /* DemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVC.swift; sourceTree = "<group>"; };
 		9DFA1B5825E019160026C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +59,51 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		9D040C4525E930C600B01B8B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9D040C4825E931F600B01B8B /* Demo */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9D040C4725E930F000B01B8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DFA1B4125E010710026C3C2 /* Assets.xcassets */,
+				9DFA1B4325E010710026C3C2 /* LaunchScreen.storyboard */,
+				9DFA1B5925E019160026C3C2 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D040C4825E931F600B01B8B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9D040C5425E9372000B01B8B /* Domain */,
+				9D040C4C25E9324A00B01B8B /* Presentation */,
+				9D040C4925E9320800B01B8B /* DemoRouter.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		9D040C4C25E9324A00B01B8B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9D040C5125E9371500B01B8B /* DemoPresenter.swift */,
+				9DFA1B5025E011760026C3C2 /* DemoVC.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9D040C5425E9372000B01B8B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9D040C4E25E9370A00B01B8B /* Demo.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		9DFA1B2C25E010700026C3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -74,15 +123,12 @@
 		9DFA1B3725E010700026C3C2 /* Viperion */ = {
 			isa = PBXGroup;
 			children = (
+				9D040C4725E930F000B01B8B /* Resources */,
 				9D040C3925E9209500B01B8B /* Application */,
+				9D040C4525E930C600B01B8B /* Screens */,
 				9DFA1B3825E010700026C3C2 /* AppDelegate.swift */,
 				9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */,
-				9DFA1B3C25E010700026C3C2 /* ViewController.swift */,
-				9DFA1B4125E010710026C3C2 /* Assets.xcassets */,
-				9DFA1B4325E010710026C3C2 /* LaunchScreen.storyboard */,
 				9DFA1B4625E010710026C3C2 /* Info.plist */,
-				9DFA1B5025E011760026C3C2 /* MainVC.swift */,
-				9DFA1B5925E019160026C3C2 /* Localizable.strings */,
 			);
 			path = Viperion;
 			sourceTree = "<group>";
@@ -159,10 +205,12 @@
 			files = (
 				9D040C3F25E9263400B01B8B /* ServiceLocator.swift in Sources */,
 				9D040C4225E926FB00B01B8B /* UIApplication.swift in Sources */,
-				9DFA1B3D25E010700026C3C2 /* ViewController.swift in Sources */,
-				9DFA1B5125E011760026C3C2 /* MainVC.swift in Sources */,
+				9D040C4F25E9370A00B01B8B /* Demo.swift in Sources */,
+				9DFA1B5125E011760026C3C2 /* DemoVC.swift in Sources */,
 				9DFA1B3925E010700026C3C2 /* AppDelegate.swift in Sources */,
 				9D040C3B25E920A200B01B8B /* AppRouter.swift in Sources */,
+				9D040C5225E9371500B01B8B /* DemoPresenter.swift in Sources */,
+				9D040C4A25E9320800B01B8B /* DemoRouter.swift in Sources */,
 				9DFA1B3B25E010700026C3C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
