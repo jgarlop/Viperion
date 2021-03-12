@@ -6,4 +6,7 @@
   
 */
 
+// Demo module
 "success" = "Success!";
+"demo_title" = "This is a demo module";
+"change_text_button_title" = "Change text";
