@@ -9,9 +9,14 @@ import Foundation
 
 final class DemoRouter {
     static func assemble() -> DemoVC {
-        let presenter = DemoPresenterImpl()
+        let interactor = DemoImpl()
+
+        let presenter = DemoPresenterImpl(interactor: interactor)
+        interactor.output = presenter
+
         let vc = DemoVC(presenter: presenter)
         presenter.output = vc
+        
         return vc
     }
 }

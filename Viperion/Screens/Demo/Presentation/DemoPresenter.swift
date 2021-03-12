@@ -18,10 +18,20 @@ protocol DemoPresenterOutput: class {
 
 final class DemoPresenterImpl: DemoPresenter {
     weak var output: DemoPresenterOutput?
+    let interactor: Demo
+
+    init(interactor: Demo) {
+        self.interactor = interactor
+    }
 
     func getNewString() {
-        let string = "This is a just a demo module to show how VIPER works. Stay tuned!"
-        output?.showNewString(string)
+        interactor.retrieveNewString()
+    }
+}
+
+extension DemoPresenterImpl: DemoOutput {
+    func retrieveNewStringSuccess(newString: String) {
+        output?.showNewString(newString)
         output?.enableButton(false)
     }
 }
