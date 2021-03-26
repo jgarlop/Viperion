@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		9D040C4A25E9320800B01B8B /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4925E9320800B01B8B /* DemoRouter.swift */; };
 		9D040C4F25E9370A00B01B8B /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C4E25E9370A00B01B8B /* Demo.swift */; };
 		9D040C5225E9371500B01B8B /* DemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D040C5125E9371500B01B8B /* DemoPresenter.swift */; };
+		9DAA9365260E41FB00ECB820 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DAA9364260E41FB00ECB820 /* SnapKit */; };
+		9DAA9369260E423100ECB820 /* HelperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DAA9368260E423100ECB820 /* HelperKit */; };
 		9DFA1B3925E010700026C3C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3825E010700026C3C2 /* AppDelegate.swift */; };
 		9DFA1B3B25E010700026C3C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA1B3A25E010700026C3C2 /* SceneDelegate.swift */; };
 		9DFA1B4225E010710026C3C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DFA1B4125E010710026C3C2 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAA9365260E41FB00ECB820 /* SnapKit in Frameworks */,
+				9DAA9369260E423100ECB820 /* HelperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +153,10 @@
 			dependencies = (
 			);
 			name = Viperion;
+			packageProductDependencies = (
+				9DAA9364260E41FB00ECB820 /* SnapKit */,
+				9DAA9368260E423100ECB820 /* HelperKit */,
+			);
 			productName = Viperion;
 			productReference = 9DFA1B3525E010700026C3C2 /* Viperion.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +184,10 @@
 				Base,
 			);
 			mainGroup = 9DFA1B2C25E010700026C3C2;
+			packageReferences = (
+				9DAA9363260E41FB00ECB820 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9DAA9367260E423100ECB820 /* XCRemoteSwiftPackageReference "HelperKit" */,
+			);
 			productRefGroup = 9DFA1B3625E010700026C3C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -415,6 +427,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DAA9363260E41FB00ECB820 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		9DAA9367260E423100ECB820 /* XCRemoteSwiftPackageReference "HelperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marionauta/HelperKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DAA9364260E41FB00ECB820 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DAA9363260E41FB00ECB820 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		9DAA9368260E423100ECB820 /* HelperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DAA9367260E423100ECB820 /* XCRemoteSwiftPackageReference "HelperKit" */;
+			productName = HelperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DFA1B2D25E010700026C3C2 /* Project object */;
 }
