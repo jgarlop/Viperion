@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "HelperKit",
+        "repositoryURL": "https://github.com/marionauta/HelperKit",
+        "state": {
+          "branch": null,
+          "revision": "675147897165c9fe611a7d77aa44a31ddc1c8c9b",
+          "version": "0.7.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
