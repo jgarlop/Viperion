@@ -28,6 +28,7 @@ extension SceneDelegate {
     }
 
     private func navigateToFirstModule() {
-        UIApplication.serviceLocator.appRouter.set(DemoRouter.assemble())
+        let demoModule = DemoRouter.assemble()
+        UIApplication.serviceLocator.appRouter.set(demoModule)
     }
 }

@@ -12,30 +12,24 @@ final class DemoVC: UIViewController {
 
     // MARK: Views
 
-    private lazy var titleLabel: UILabel = {
-        let view =  UILabel()
-        view.text = NSLocalizedString("success", comment: "")
-        view.textColor = UIColor.red
-        return view
-    }()
+    private lazy var titleLabel = UILabel().apply {
+        $0.text = "success".localized
+        $0.textColor = UIColor.red
+    }
 
-    private lazy var subtitleLabel: UILabel = {
-        let view = UILabel()
-        view.text = NSLocalizedString("demo_title", comment: "")
-        view.textColor = UIColor.gray
-        view.textAlignment = .center
-        view.numberOfLines = 0
-        return view
-    }()
+    private lazy var subtitleLabel = UILabel().apply {
+        $0.text = "demo_title".localized
+        $0.textColor = UIColor.gray
+        $0.textAlignment = .center
+        $0.numberOfLines = 0
+    }
 
-    private lazy var changeTextButton: UIButton = {
-        let view = UIButton(type: .system)
-        view.setTitle(NSLocalizedString("change_text_button_title", comment: ""), for: .normal)
-        view.addAction(UIAction(handler: { [weak self] action in
+    private lazy var changeTextButton = UIButton(type: .system).apply {
+        $0.setTitle("change_text_button_title".localized, for: .normal)
+        $0.addAction(UIAction(handler: { [weak self] action in
             self?.presenter.getNewString()
         }), for: .touchUpInside)
-        return view
-    }()
+    }
 
     // MARK: Init
 
@@ -68,24 +62,24 @@ extension DemoVC {
 
     private func setupMain() {
         view.backgroundColor = UIColor.white
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
-        view.addSubview(changeTextButton)
+        view.addSubviews(titleLabel, subtitleLabel, changeTextButton)
     }
 
     private func setupConstraints() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        titleLabel.snp.makeConstraints {
+            $0.center.equalToSuperview()
+        }
 
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4.0).isActive = true
-        subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 4.0).isActive = true
-        subtitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -4.0).isActive = true
+        subtitleLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(4)
+            $0.left.equalToSuperview().offset(4)
+            $0.right.equalToSuperview().offset(-4)
+        }
 
-        changeTextButton.translatesAutoresizingMaskIntoConstraints = false
-        changeTextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        changeTextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20.0).isActive = true
+        changeTextButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(-20)
+        }
     }
 }
 

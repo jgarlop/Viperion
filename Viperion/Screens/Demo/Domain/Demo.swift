@@ -11,7 +11,7 @@ protocol Demo {
     func retrieveNewString()
 }
 
-protocol DemoOutput: class {
+protocol DemoOutput: AnyObject {
     func retrieveNewStringSuccess(newString: String)
 }
 
