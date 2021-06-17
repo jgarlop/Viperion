@@ -11,7 +11,7 @@ protocol DemoPresenter {
     func getNewString()
 }
 
-protocol DemoPresenterOutput: class {
+protocol DemoPresenterOutput: AnyObject {
     func showNewString(_ string: String)
     func enableButton(_ enabled: Bool)
 }
